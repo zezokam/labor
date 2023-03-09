@@ -1,101 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Post-Service Gratuity Calculator</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="labor.js"></script>
-	<style>
-		h1 {
-			text-align: center;
-			margin-top: 20px;
-		}
+	<title>Post Service Gratuity Calculator</title>
+	<script>
+		function calculateGratuity() {
+			// Get input values
+			var startDate = new Date(document.getElementById("startDate").value);
+			var endDate = new Date(document.getElementById("endDate").value);
+			var lastBasicWage = parseInt(document.getElementById("lastBasicWage").value);
 
-		form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 20px;
-		}
+			// Calculate years of service
+			var yearsOfService = (endDate - startDate) / (1000 * 60 * 60 * 24 * 365);
 
-		label {
-			margin-top: 10px;
-		}
+			// Calculate gratuity rate
+			var gratuityRate;
+			if (yearsOfService <= 3) {
+				gratuityRate = 15;
+			} else {
+				gratuityRate = 30;
+			}
 
-		input[type="date"],
-		input[type="number"] {
-			width: 60%;
-			padding: 10px;
-			margin-top: 5px;
-			border-radius: 5px;
-			border: none;
-			box-shadow: 0 0 5px #ccc;
-		}
-		
-		input[type="number"] {
-			border: 1px solid black;
-			width: 40%;
-		}
+			// Calculate fraction of year of service
+			var fractionOfYear = (endDate - startDate) % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24 * 365);
 
-		input[type="submit"] {
-			width: 100px;
-			padding: 10px;
-			margin-top: 20px;
-			background-color: #4CAF50;
-			color: white;
-			border: none;
-			border-radius: 5px;
-			box-shadow: 0 0 5px #ccc;
-			cursor: pointer;
-		}
+			// Calculate gratuity amount
+			var gratuityAmount = (gratuityRate / 30) * lastBasicWage * (yearsOfService + fractionOfYear);
 
-		input[type="submit"]:hover {
-			background-color: #3e8e41;
+			// Display result
+			document.getElementById("result").innerHTML = "The post service gratuity is: " + gratuityAmount.toFixed(2) + " OMR";
 		}
-
-		p#result {
-			text-align: center;
-			margin-top: 20px;
-			font-size: 16px;
-			font-weight: bold;
-		}
-		
-		footer {
-			margin-top: 20px;
-			background-color: #f1f1f1;
-			padding: 20px;
-			text-align: center;
-			font-size: 11px;
-			width: 100%;
-			position: fixed;
- 			left: 0;
- 			right: 0;
- 			bottom: 0;
-
-		}
-	</style>
+	</script>
 </head>
 <body>
-	<h1>Post-Service Gratuity Calculator</h1>
-	<form onsubmit="calculateGratuity(event);">
-		<label for="start_date">Start Date:</label>
-		<input type="date" id="start_date" name="start_date" required><br>
-
-		<label for="end_date">End Date:</label>
-		<input type="date" id="end_date" name="end_date" required><br>
-
-		<label for="monthly_salary">Monthly Salary (in O.R):</label>
-		<input type="number" id="monthly_salary" name="monthly_salary" required step="0.001" min="0" max="999999.999" class="salary-input"><br>
-
-		<input type="submit" value="Calculate">
-	</form>
-
+	<h1>Post Service Gratuity Calculator</h1>
+	<label for="startDate">Start Date:</label>
+	<input type="date" id="startDate" name="startDate"><br><br>
+	<label for="endDate">End Date:</label>
+	<input type="date" id="endDate" name="endDate"><br><br>
+	<label for="lastBasicWage">Last Basic Wage per Month (OMR):</label>
+	<input type="number" id="lastBasicWage" name="lastBasicWage"><br><br>
+	<button onclick="calculateGratuity()">Calculate</button>
 	<p id="result"></p>
-	
-	<footer>
-		<p>according to Article 39 of the Omani Labor Law 35/2003.</p>
-		<p>&copy; 2023 Azzan Alkamali. </p>
-
-	</footer>
-
 </body>
 </html>
