@@ -40,6 +40,17 @@ input[type="submit"]:hover {
 	background-color: #3e8e41;
 }
 
+.salary-input {
+	width: 200px;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px #ccc;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
 p#result {
 	text-align: center;
 	margin-top: 20px;
