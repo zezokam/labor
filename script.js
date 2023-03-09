@@ -19,3 +19,4 @@ function calculateGratuity() {
 
 	document.getElementById("result").innerHTML = "Post-Service Gratuity: " + post_service_gratuity.toFixed(2) + " O.R";
 }
+ 
