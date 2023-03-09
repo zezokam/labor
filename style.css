@@ -1,59 +1,53 @@
 h1 {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 5vw;
+	font-size: 5vw;
 }
 
 form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 5vw;
 }
 
 label {
-	margin-top: 10px;
+	margin-top: 2vw;
 }
 
 input[type="date"],
-input[type="number"] {
-	width: 200px;
-	padding: 10px;
-	margin-top: 5px;
-	border-radius: 5px;
+input[type="number"],
+salary-input {
+	width: 80%;
+	padding: 3vw;
+	margin-top: 2vw;
+	border-radius: 1vw;
 	border: none;
-	box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 0.5vw #ccc;
+	font-size: 4vw;
+	line-height: 1.5;
 }
 
 input[type="submit"] {
-	width: 100px;
-	padding: 10px;
-	margin-top: 20px;
+	width: 60%;
+	padding: 3vw;
+	margin-top: 5vw;
 	background-color: #4CAF50;
 	color: white;
 	border: none;
-	border-radius: 5px;
-	box-shadow: 0 0 5px #ccc;
+	border-radius: 1vw;
+	box-shadow: 0 0 0.5vw #ccc;
 	cursor: pointer;
+	font-size: 4vw;
 }
 
 input[type="submit"]:hover {
 	background-color: #3e8e41;
 }
 
-salary-input {
-	width: 200px;
-	padding: 10px;
-	margin-top: 5px;
-	border-radius: 5px;
-	border: 2px solid black; /* Add a 2px solid black border */
-	box-shadow: 0 0 5px #ccc;
-	font-size: 16px;
-	line-height: 1.5;
-}
-
 p#result {
 	text-align: center;
-	margin-top: 20px;
-	font-size: 20px;
+	margin-top: 5vw;
+	font-size: 5vw;
 	font-weight: bold;
 }
