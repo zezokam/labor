@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Post-Service Gratuity Calculator</title>
 	<style>
 		h1 {
@@ -22,20 +21,11 @@
 
 		input[type="date"],
 		input[type="number"] {
-			width: 100%;
+			width: 200px;
 			padding: 10px;
 			margin-top: 5px;
 			border-radius: 5px;
 			border: none;
-			box-shadow: 0 0 5px #ccc;
-		}
-
-		input.salary-input {
-			width: 100%;
-			padding: 10px;
-			margin-top: 5px;
-			border-radius: 5px;
-			border: 1px solid black;
 			box-shadow: 0 0 5px #ccc;
 		}
 
@@ -65,15 +55,15 @@
 </head>
 <body>
 	<h1>Post-Service Gratuity Calculator</h1>
-	<form onsubmit="calculateGratuity(); return false;">
+	<form onsubmit="calculateGratuity(event);">
 		<label for="start_date">Start Date:</label>
-		<input type="date" id="start_date" name="start_date" required>
+		<input type="date" id="start_date" name="start_date" required><br>
 
 		<label for="end_date">End Date:</label>
-		<input type="date" id="end_date" name="end_date" required>
+		<input type="date" id="end_date" name="end_date" required><br>
 
 		<label for="monthly_salary">Monthly Salary (in O.R):</label>
-		<input type="number" id="monthly_salary" name="monthly_salary" required class="salary-input">
+		<input type="number" id="monthly_salary" name="monthly_salary" required step="0.001" min="0" max="999999.999" class="salary-input"><br>
 
 		<input type="submit" value="Calculate">
 	</form>
@@ -81,10 +71,17 @@
 	<p id="result"></p>
 
 	<script>
-		function calculateGratuity() {
+		function calculateGratuity(event) {
+			event.preventDefault();
+
 			const start_date = new Date(document.getElementById("start_date").value);
 			const end_date = new Date(document.getElementById("end_date").value);
 			const monthly_salary = parseFloat(document.getElementById("monthly_salary").value);
+
+			if (isNaN(monthly_salary) || monthly_salary < 0 || monthly_salary > 999999.999) {
+				alert("Please enter a valid monthly salary.");
+				return;
+			}
 
 			const daily_salary = monthly_salary / 30;
 			const years_of_service = Math.floor((end_date - start_date) / (1000 * 60 * 60 * 24 * 365));
