@@ -1,48 +1,104 @@
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
 h1 {
-	text-align: center;
-	margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 label {
-	margin-top: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 input[type="date"],
 input[type="number"] {
-	width: 200px;
-	padding: 10px;
-	margin-top: 5px;
-	border-radius: 5px;
-	border: none;
-	box-shadow: 0 0 5px #ccc;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px #ccc;
+  font-size: 16px;
 }
 
 input[type="submit"] {
-	width: 100px;
-	padding: 10px;
-	margin-top: 20px;
-	background-color: #4CAF50;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 0 0 5px #ccc;
-	cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 input[type="submit"]:hover {
-	background-color: #3e8e41;
+  background-color: #3e8e41;
 }
 
 p#result {
-	text-align: center;
-	margin-top: 20px;
-	font-size: 20px;
-	font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  form {
+    margin-top: 10px;
+    padding: 5px;
+    max-width: 300px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  input[type="date"],
+  input[type="number"] {
+    padding: 8px;
+    margin-top: 3px;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  p#result {
+    margin-top: 10px;
+    font-size: 20px;
+  }
 }
