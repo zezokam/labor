@@ -16,12 +16,13 @@ function calculateGratuity() {
     var dailyWage = lastBasicWage / 30;
 
     // Calculate gratuity amount
-    var gratuityAmount = 0;
-    if (yearsOfService < 3) {
-        gratuityAmount = (dailyWage * 15 * yearsOfService);
-    } else {
-        gratuityAmount = (dailyWage * 45 * (yearsOfService - 3)) + (dailyWage * 30 * monthsOfService / 12);
-    }
+var gratuityAmount = 0;
+if (yearsOfService < 3) {
+    gratuityAmount = (dailyWage * 15 * yearsOfService);
+} else {
+    gratuityAmount = (dailyWage * 45) + (dailyWage * 30 * (yearsOfService - 3)) + (dailyWage * monthsOfService / 12 * 30);
+}
+
 
     // Display result
     document.getElementById("result").innerHTML = "The end of service gratuity is: " + gratuityAmount.toFixed(2) + " OMR";
