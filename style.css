@@ -1,66 +1,29 @@
-/* Set box-sizing property for all elements */
-* {
-  box-sizing: border-box;
-}
-
-/* Set body styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Set styles for the header */
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-/* Set styles for the form */
+<style>
+/* Center the form */
 form {
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Set styles for the form labels and inputs */
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+/* Adjust the font size and line height for mobile */
+body {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-input[type="date"],
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* Adjust the padding and margins for mobile */
+h1, form, footer {
+  padding: 1rem;
+  margin: 0;
 }
 
+/* Make the button full width on mobile */
 button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 100%;
 }
 
-/* Set styles for the result container */
-#result {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Set styles for the footer */
+/* Adjust the footer text alignment and font size for mobile */
 footer {
   background-color: #f2f2f2;
   padding: 20px;
@@ -74,21 +37,4 @@ footer {
   left: 0;
   right: 0;
 }
-
-@media (max-width: 768px) {
-  /* Set styles for mobile devices */
-  form {
-    max-width: 100%;
-    padding: 10px;
-  }
-  
-  input[type="date"],
-  input[type="number"],
-  button {
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 10px;
-  }
-}
+</style>
