@@ -1,70 +1,53 @@
-/* Apply default styles to all elements */
-* {
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Apply custom styles to the body */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #f2f2f2;
-  color: #333;
-  padding: 20px;
-}
-
-/* Apply custom styles to the header */
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.container {
+  max-width: 500px;
+  margin: 0 auto;
   text-align: center;
 }
 
-/* Apply custom styles to the form */
-form {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  max-width: 500px;
-  margin: 0 auto;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* Apply custom styles to the form elements */
 label {
+  font-size: 1.2rem;
   display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 input[type="date"],
 input[type="number"] {
-  padding: 10px;
+  font-size: 1.2rem;
+  padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid #ccc;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 button {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: #005fa3;
 }
 
-/* Apply custom styles to the result */
-#result {
-  font-size: 24px;
-  font-weight: bold;
+.result {
+  font-size: 1.2rem;
+  margin-top: 1rem;
   text-align: center;
 }
