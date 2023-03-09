@@ -18,9 +18,9 @@ function calculateGratuity() {
     // Calculate gratuity amount
     var gratuityAmount = 0;
     if (yearsOfService < 3) {
-        gratuityAmount = (dailyWage * 15 * yearsOfService) + (dailyWage * 7.5 * monthsOfService);
+        gratuityAmount = (dailyWage * 15 * yearsOfService);
     } else {
-        gratuityAmount = (dailyWage * 30 * yearsOfService) + (dailyWage * monthsOfService);
+        gratuityAmount = (dailyWage * 30 * yearsOfService) + (dailyWage * 30 / 12 * monthsOfService);
     }
 
     // Display result
