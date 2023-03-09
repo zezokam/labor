@@ -1,37 +1,70 @@
+/* Apply default styles to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply custom styles to the body */
 body {
-	font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
 }
 
+/* Apply custom styles to the header */
 h1 {
-	text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Apply custom styles to the form */
+form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Apply custom styles to the form elements */
 label {
-	display: inline-block;
-	width: 200px;
-	text-align: right;
-	margin-right: 10px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-input[type="date"], input[type="number"] {
-	padding: 5px;
-	border-radius: 5px;
-	border: none;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+input[type="date"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 button {
-	padding: 10px 20px;
-	background-color: #4CAF50;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-	cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-p#result {
-	font-size: 1.2em;
-	margin-top: 20px;
-	text-align: center;
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Apply custom styles to the result */
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
