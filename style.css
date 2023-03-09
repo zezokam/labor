@@ -1,69 +1,37 @@
-/* Global Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+	font-family: Arial, sans-serif;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+	text-align: center;
 }
 
 label {
-    font-weight: bold;
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	margin-right: 10px;
 }
 
-input, button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+input[type="date"], input[type="number"] {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+	cursor: pointer;
 }
 
-button:hover {
-    background-color: #3e8e41;
-}
-
-p {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
-    .container {
-        max-width: 100%;
-        padding: 10px;
-    }
-    
-    input, button {
-        padding: 5px;
-        font-size: 14px;
-    }
+p#result {
+	font-size: 1.2em;
+	margin-top: 20px;
+	text-align: center;
 }
