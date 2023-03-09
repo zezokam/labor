@@ -2,60 +2,10 @@
 <html>
 <head>
 	<title>Post-Service Gratuity Calculator</title>
-	<style>
-		h1 {
-			text-align: center;
-			margin-top: 20px;
-		}
-
-		form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 20px;
-		}
-
-		label {
-			margin-top: 10px;
-		}
-
-		input[type="date"],
-		input[type="number"] {
-			width: 200px;
-			padding: 10px;
-			margin-top: 5px;
-			border-radius: 5px;
-			border: none;
-			box-shadow: 0 0 5px #ccc;
-		}
-
-		input[type="submit"] {
-			width: 100px;
-			padding: 10px;
-			margin-top: 20px;
-			background-color: #4CAF50;
-			color: white;
-			border: none;
-			border-radius: 5px;
-			box-shadow: 0 0 5px #ccc;
-			cursor: pointer;
-		}
-
-		input[type="submit"]:hover {
-			background-color: #3e8e41;
-		}
-
-		p#result {
-			text-align: center;
-			margin-top: 20px;
-			font-size: 20px;
-			font-weight: bold;
-		}
-	</style>
 </head>
 <body>
 	<h1>Post-Service Gratuity Calculator</h1>
-	<form onsubmit="calculateGratuity(); return false;">
+	<form>
 		<label for="start_date">Start Date:</label>
 		<input type="date" id="start_date" name="start_date" required><br>
 
@@ -65,7 +15,7 @@
 		<label for="monthly_salary">Monthly Salary (in O.R):</label>
 		<input type="number" id="monthly_salary" name="monthly_salary" required><br>
 
-		<input type="submit" value="Calculate">
+		<input type="submit" value="Calculate" onclick="calculateGratuity()">
 	</form>
 
 	<p id="result"></p>
