@@ -1,26 +1,8 @@
-<style>
-/* Center the form */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Adjust the font size and line height for mobile */
+/* Center the page */
 body {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* Adjust the padding and margins for mobile */
-h1, form, footer {
-  padding: 1rem;
-  margin: 0;
-}
-
-/* Make the button full width on mobile */
-button {
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Adjust the footer text alignment and font size for mobile */
@@ -37,4 +19,33 @@ footer {
   left: 0;
   right: 0;
 }
-</style>
+
+/* Adjust font size and margins for mobile phone viewing */
+h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+label, input, button {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+/* Set the width of the form to 90% of the screen */
+form {
+    width: 90%;
+}
+
+/* Set the width of the result div to 90% of the screen and center it */
+#result {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add some padding and a border to the result div */
+#result {
+    padding: 1rem;
+    border: 1px solid black;
+}
