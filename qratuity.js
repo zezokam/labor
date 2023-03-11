@@ -4,24 +4,23 @@ function calculateGratuity() {
   var endDate = new Date(document.getElementById("endDate").value);
   var lastBasicWage = parseFloat(document.getElementById("lastBasicWage").value).toFixed(3);
 
-  // Calculate duration in years, months, and days
-  var years = endDate.getFullYear() - startDate.getFullYear();
-  var totalMonths = (endDate.getMonth() + 12 * years) - startDate.getMonth();
-  var months = totalMonths % 12;
-  var days = Math.floor((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) % 30;
+  // Calculate years and months of service
+  var yearsOfService = endDate.getFullYear() - startDate.getFullYear();
+  var monthsOfService = endDate.getMonth() - startDate.getMonth();
+  var daysOfService = endDate.getDate() - startDate.getDate();
 
-  if (days < 0) {
+  if (daysOfService < 0) {
     var daysInLastMonth = new Date(endDate.getFullYear(), endDate.getMonth(), 0).getDate();
-    if (days + daysInLastMonth >= 30) {
-      months--;
+    if (daysOfService + daysInLastMonth >= 30) {
+      monthsOfService--;
     } else {
-      days += daysInLastMonth;
+      daysOfService += daysInLastMonth;
     }
   }
 
-  if (months < 0) {
-    years--;
-    months += 12;
+  if (monthsOfService < 0) {
+    yearsOfService--;
+    monthsOfService += 12;
   }
 
   // Calculate daily wage
