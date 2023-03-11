@@ -1,36 +1,27 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
+h1 {
   text-align: center;
 }
 
-h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
 form {
-  margin-bottom: 20px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 label {
   display: block;
-  font-size: 18px;
+  width: 200px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 input[type="date"],
 input[type="number"] {
-  font-size: 16px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -42,7 +33,6 @@ input[type="number"] {
 button[type="button"] {
   background-color: #4CAF50;
   color: white;
-  font-size: 16px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -52,14 +42,9 @@ button[type="button"] {
 
 #result {
   margin-top: 20px;
+  border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
-  display: none;
-}
-
-#result.show {
-  display: block;
-  border: 1px solid #ccc;
 }
 
 footer {
