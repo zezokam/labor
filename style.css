@@ -1,3 +1,4 @@
+/* Adjust the styles for input fields */
 input[type="date"] {
   width: 300px;
   padding: 10px;
@@ -20,6 +21,15 @@ input[type="number"] {
   line-height: 1.5;
 }
 
+/* Adjust the styles for input field labels */
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Adjust the styles for input fields on mobile */
 @media screen and (max-width: 600px) {
   input[type="date"] {
     width: 100%;
@@ -28,9 +38,14 @@ input[type="number"] {
   input[type="number"] {
     width: 100%;
   }
+  
+  /* Adjust the styles for input field labels on mobile */
+  label {
+    font-size: 18px;
+  }
 }
 
-/* Adjust the footer text alignment and font size for mobile */
+/* Adjust the styles for the footer */
 footer {
   background-color: #f2f2f2;
   padding: 20px;
@@ -44,4 +59,3 @@ footer {
   left: 0;
   right: 0;
 }
-
