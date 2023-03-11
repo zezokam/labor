@@ -59,3 +59,13 @@ footer {
   left: 0;
   right: 0;
 }
+
+
+/* Center the page contents */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
