@@ -54,8 +54,7 @@ footer {
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
-  font-size: 14px;
-  font-style: italic;
+  font-size: 16px;
   color: #666;
   width: 100%;
   position: fixed;
@@ -67,14 +66,21 @@ footer {
 /* Center the page contents */
 .container {
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 50px;
+  height: 600px;
 }
-
 
 /* Adjust the styles for the title */
 h1 {
   font-size: 36px;
   font-weight: bold;
   margin-top: 50px;
+}
+
+/* Adjust the styles for the result */
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
 }
