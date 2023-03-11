@@ -2,7 +2,7 @@ function calculateGratuity() {
   // Get input values
   var startDate = new Date(document.getElementById("startDate").value);
   var endDate = new Date(document.getElementById("endDate").value);
-  var lastBasicWage = parseInt(document.getElementById("lastBasicWage").value);
+  var lastBasicWage = parseFloat(document.getElementById("lastBasicWage").value).toFixed(3);
 
   // Calculate years and months of service
   var yearsOfService = endDate.getFullYear() - startDate.getFullYear();
