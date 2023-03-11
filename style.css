@@ -16,16 +16,19 @@ label {
 }
 
 input[type="date"],
-input[type="number"],
-salary-input {
-	width: 80%;
-	padding: 3vw;
-	margin-top: 2vw;
-	border-radius: 1vw;
-	border: none;
-	box-shadow: 0 0 0.5vw #ccc;
-	font-size: 4vw;
-	line-height: 1.5;
+input[type="number"] {
+  width: 80%;
+  padding: 3vw;
+  margin-top: 2vw;
+  border-radius: 1vw;
+  border: none;
+  box-shadow: 0 0 0.5vw #ccc;
+  font-size: 4vw;
+  line-height: 1.5;
+}
+
+input[type="number"] {
+  border: 0.2vw solid #ccc;
 }
 
 input[type="submit"] {
