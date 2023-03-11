@@ -1,52 +1,77 @@
-body {
-  font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
-  margin: 0;
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: auto;
   padding: 0;
 }
 
-h1 {
+/* Set the font family and size for the entire page */
+body {
+  font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
+  font-size: 16px;
   text-align: center;
 }
 
-form {
-  max-width: 500px;
+/* Add a top-level container to center the page content */
+.container {
+  max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the page title */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Style the input form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 label {
-  display: block;
-  width: 200px;
-  font-weight: bold;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 input[type="date"],
 input[type="number"] {
+  font-size: 20px;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 100%;
-  box-sizing: border-box;
   margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button[type="button"] {
+  font-size: 20px;
+  padding: 10px;
   background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
+  color: #FFFFFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #3E8E41;
+}
+
+/* Style the result container */
+#result {
+  margin-top: 20px;
+}
+
+#error-message {
+  font-size: 20px;
+  color: #FF0000;
   margin-bottom: 20px;
 }
 
-#result {
-  margin-top: 20px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 5px;
-}
-
+/* Style the footer */
 footer {
   background-color: #f2f2f2;
   text-align: center;
