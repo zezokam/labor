@@ -9,10 +9,6 @@ function calculateGratuity() {
   var monthsOfService = endDate.getMonth() - startDate.getMonth();
   var daysOfService = endDate.getDate() - startDate.getDate();
   
-  if (daysOfService >= 15) {
-    monthsOfService++;
-  }
-  
   if (monthsOfService < 0) {
     yearsOfService--;
     monthsOfService += 12;
