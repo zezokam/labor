@@ -47,6 +47,12 @@ label {
   label {
     font-size: 18px;
   }
+
+  /* Adjust the styles for the result on mobile */
+  .result {
+    font-size: 28px;
+    margin-top: 50px;
+  }
 }
 
 /* Adjust the styles for the footer */
