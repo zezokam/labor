@@ -1,58 +1,33 @@
-h1 {
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 5vw;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 5vw;
-}
-
-label {
-	margin-top: 2vw;
-}
-
-input[type="date"],
-input[type="number"] {
-  width: 80%;
-  padding: 3vw;
-  margin-top: 2vw;
-  border-radius: 1vw;
+input[type="date"] {
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
   border: none;
-  box-shadow: 0 0 0.5vw #ccc;
-  font-size: 4vw;
+  box-shadow: 0 0 5px #ccc;
+  font-size: 16px;
   line-height: 1.5;
 }
 
 input[type="number"] {
-  border: 0.2vw solid #ccc;
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-input[type="submit"] {
-	width: 60%;
-	padding: 3vw;
-	margin-top: 5vw;
-	background-color: #4CAF50;
-	color: white;
-	border: none;
-	border-radius: 1vw;
-	box-shadow: 0 0 0.5vw #ccc;
-	cursor: pointer;
-	font-size: 4vw;
-}
+@media screen and (max-width: 600px) {
+  input[type="date"] {
+    width: 100%;
+  }
 
-input[type="submit"]:hover {
-	background-color: #3e8e41;
-}
-
-p#result {
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 5vw;
-	font-weight: bold;
+  input[type="number"] {
+    width: 100%;
+  }
 }
 
 /* Adjust the footer text alignment and font size for mobile */
