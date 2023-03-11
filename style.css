@@ -22,7 +22,7 @@ body {
 /* Style the page title */
 h1 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Style the input form */
@@ -62,7 +62,8 @@ button[type="button"]:hover {
 
 /* Style the result container */
 #result {
-  margin-top: 20px;
+  margin-top: 45px;
+  font-size: 28px;
 }
 
 #error-message {
@@ -78,7 +79,6 @@ footer {
   padding: 10px;
   position: fixed;
   bottom: 0;
-  width: 100%;
   font-size: 12px;
   color: #666;
   border-top: 1px solid #ccc;
