@@ -1,3 +1,36 @@
+/* Set the viewport to the device width */
+meta {
+  viewport: width=device-width, initial-scale=1;
+}
+
+/* Set the width of the container to 100% and remove padding */
+.container {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Set the font size of the page to be responsive */
+body {
+  font-size: 1.2rem;
+}
+
+/* Remove margin from h1 element */
+h1 {
+  margin: 0;
+}
+
+/* Add margin-top to result container to account for h1 margin */
+#result {
+  margin-top: 80px;
+}
+
+/* Set the height of the footer and add margin-top to the result container */
+footer {
+  height: 40px;
+  margin-top: 20px;
+}
+
 /* Reset default styles */
 * {
   box-sizing: border-box;
