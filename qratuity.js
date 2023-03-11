@@ -22,11 +22,6 @@ function calculateGratuity() {
     yearsOfService--;
     monthsOfService += 12;
   }
-  
-  if (monthsOfService === 0 && daysOfService >= 30) {
-    monthsOfService = 1;
-    daysOfService = 0;
-  }
 
   // Calculate daily wage
   var dailyWage = lastBasicWage / 30;
