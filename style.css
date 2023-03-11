@@ -1,3 +1,36 @@
+/* Set the viewport to the device width */
+meta {
+  viewport: width=device-width, initial-scale=1;
+}
+
+/* Set the width of the container to 100% and remove padding */
+.container {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Set the font size of the page to be responsive */
+body {
+  font-size: 1.2rem;
+}
+
+/* Add margin to h1 element */
+h1 {
+  margin: 20px 0 40px;
+}
+
+/* Add margin-top to result container to account for h1 margin */
+#result {
+  margin-top: 30px;
+}
+
+/* Set the height of the footer and reduce margin-top of result container */
+footer {
+  height: 30px;
+  margin-top: 10px;
+}
+
 /* Reset default styles */
 * {
   box-sizing: border-box;
@@ -5,30 +38,11 @@
   padding: 0;
 }
 
-/* Set the viewport to the device width */
-meta {
-  viewport: width=device-width, initial-scale=1;
-}
-
 /* Set the font family and size for the entire page */
 body {
   font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 16px;
   text-align: center;
-}
-
-/* Add a top-level container to center the page content */
-.container {
-  max-width: none;
-  padding: 0;
-  width: 100%;
-  margin-bottom: 60px; /* adjust as necessary to prevent footer overlap */
-}
-
-/* Remove margin from h1 element */
-h1 {
-  margin: 0;
-  font-size: 2rem; /* increase size for better visibility on smaller screens */
 }
 
 /* Style the input form */
@@ -39,13 +53,13 @@ form {
 }
 
 label {
-  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 input[type="date"],
 input[type="number"] {
-  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
+  font-size: 20px;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -53,7 +67,7 @@ input[type="number"] {
 }
 
 button[type="button"] {
-  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
+  font-size: 20px;
   padding: 10px;
   background-color: #4CAF50;
   color: #FFFFFF;
@@ -68,12 +82,11 @@ button[type="button"]:hover {
 
 /* Style the result container */
 #result {
-  margin-top: 80px; /* account for h1 margin */
-  font-size: 2rem; /* increase size for better visibility on smaller screens */
+  font-size: 28px;
 }
 
 #error-message {
-  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
+  font-size: 20px;
   color: #FF0000;
   margin-bottom: 20px;
 }
@@ -85,9 +98,7 @@ footer {
   padding: 10px;
   position: fixed;
   bottom: 0;
-  height: 60px; /* adjust as necessary */
-  width: 100%;
-  font-size: 1rem; /* decrease size for better fit on smaller screens */
+  font-size: 12px;
   color: #666;
   border-top: 1px solid #ccc;
 }
