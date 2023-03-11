@@ -36,5 +36,5 @@ function calculateGratuity() {
 
   // Display result
   var duration = yearsOfService + " years, " + monthsOfService + " months, " + daysOfService + " days";
-  document.getElementById("result").innerHTML = "The end of service gratuity is: " + gratuityAmount.toFixed(2) + " OMR. /nDuration of service: " + duration;
+  document.getElementById("result").innerHTML = "The end of service gratuity is: " + gratuityAmount.toFixed(3) + " OMR. /nDuration of service: " + duration;
 }
