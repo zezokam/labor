@@ -1,40 +1,7 @@
-/* Set the viewport to the device width */
-meta {
-  viewport: width=device-width, initial-scale=1;
-}
-
-/* Set the width of the container to 100% and remove padding */
-.container {
-  max-width: none;
-  padding: 0;
-  width: 100%;
-}
-
-/* Set the font size of the page to be responsive */
-body {
-  font-size: 1.2rem;
-}
-
-/* Add margin to h1 element */
-h1 {
-  margin: 20px 0 40px;
-}
-
-/* Add margin-top to result container to account for h1 margin */
-#result {
-  margin-top: 30px;
-}
-
-/* Set the height of the footer and reduce margin-top of result container */
-footer {
-  height: 30px;
-  margin-top: 10px;
-}
-
 /* Reset default styles */
 * {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -43,6 +10,24 @@ body {
   font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add a top-level container to center the page content */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Style the page title */
+h1 {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 /* Style the input form */
@@ -82,6 +67,7 @@ button[type="button"]:hover {
 
 /* Style the result container */
 #result {
+  margin-top: 45px;
   font-size: 28px;
 }
 
@@ -91,14 +77,14 @@ button[type="button"]:hover {
   margin-bottom: 20px;
 }
 
-/* Style the footer */
+/* Style the sticky footer */
 footer {
   background-color: #f2f2f2;
   text-align: center;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
   font-size: 12px;
   color: #666;
   border-top: 1px solid #ccc;
+  margin-top: auto;
+  height: 50px;
 }
