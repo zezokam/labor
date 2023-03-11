@@ -21,6 +21,16 @@ input[type="number"] {
   line-height: 1.5;
 }
 
+button[type="button"] {
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /* Adjust the styles for input field labels */
 label {
   display: block;
