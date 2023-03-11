@@ -28,3 +28,4 @@ function calculateGratuity() {
   // Display result
   document.getElementById("result").innerHTML = "The end of service gratuity is: " + gratuityAmount.toFixed(2) + " OMR";
 }
+ 
