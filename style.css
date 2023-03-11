@@ -13,26 +13,22 @@ meta {
 /* Set the font family and size for the entire page */
 body {
   font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 /* Add a top-level container to center the page content */
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  width: 100%;
   max-width: none;
   padding: 0;
+  width: 100%;
+  margin-bottom: 60px; /* adjust as necessary to prevent footer overlap */
 }
 
-/* Style the page title */
+/* Remove margin from h1 element */
 h1 {
-  font-size: 32px;
-  margin-bottom: 40px;
   margin: 0;
+  font-size: 2rem; /* increase size for better visibility on smaller screens */
 }
 
 /* Style the input form */
@@ -43,13 +39,13 @@ form {
 }
 
 label {
-  font-size: 20px;
+  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
   margin-bottom: 10px;
 }
 
 input[type="date"],
 input[type="number"] {
-  font-size: 20px;
+  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -57,7 +53,7 @@ input[type="number"] {
 }
 
 button[type="button"] {
-  font-size: 20px;
+  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
   padding: 10px;
   background-color: #4CAF50;
   color: #FFFFFF;
@@ -72,12 +68,12 @@ button[type="button"]:hover {
 
 /* Style the result container */
 #result {
-  margin-top: 80px;
-  font-size: 28px;
+  margin-top: 80px; /* account for h1 margin */
+  font-size: 2rem; /* increase size for better visibility on smaller screens */
 }
 
 #error-message {
-  font-size: 20px;
+  font-size: 1.2rem; /* increase size for better visibility on smaller screens */
   color: #FF0000;
   margin-bottom: 20px;
 }
@@ -89,9 +85,9 @@ footer {
   padding: 10px;
   position: fixed;
   bottom: 0;
-  font-size: 12px;
+  height: 60px; /* adjust as necessary */
+  width: 100%;
+  font-size: 1rem; /* decrease size for better fit on smaller screens */
   color: #666;
   border-top: 1px solid #ccc;
-  height: 40px;
-  margin-top: 20px;
 }
