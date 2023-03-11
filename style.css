@@ -1,6 +1,6 @@
 /* Adjust the styles for input fields */
 input[type="date"] {
-  width: 300px;
+  width: 80%;
   padding: 10px;
   margin-top: 20px;
   border-radius: 10px;
@@ -11,7 +11,7 @@ input[type="date"] {
 }
 
 input[type="number"] {
-  width: 90px;
+  width: 80%;
   padding: 10px;
   margin-top: 20px;
   border-radius: 10px;
@@ -22,19 +22,25 @@ input[type="number"] {
 }
 
 button[type="button"] {
-  font-size: 18px;
-  padding: 12px 24px;
+  font-size: 24px;
+  padding: 16px 32px;
   background-color: green;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #006400;
+  transform: scale(1.05);
 }
 
 /* Adjust the styles for input field labels */
 label {
   display: block;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -69,7 +75,6 @@ footer {
   left: 0;
   right: 0;
 }
-
 
 /* Center the page contents */
 body {
