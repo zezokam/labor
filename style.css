@@ -1,48 +1,42 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 h1 {
-  font-size: 32px;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 form {
-  margin-bottom: 40px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 label {
   display: block;
+  width: 100%;
+  max-width: 400px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 input[type="date"],
 input[type="number"] {
-  display: block;
-  width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  width: 100%;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
 
 button[type="button"] {
-  display: block;
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -52,11 +46,12 @@ button[type="button"] {
   margin-bottom: 20px;
 }
 
-.result {
-  margin-top: 40px;
+#result {
+  margin-top: 20px;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
+  max-width: 90%;
 }
 
 footer {
