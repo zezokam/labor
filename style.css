@@ -66,12 +66,11 @@ footer {
 
 /* Center the page contents */
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 50px;
 }
+
 
 /* Adjust the styles for the title */
 h1 {
