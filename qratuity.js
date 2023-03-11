@@ -8,7 +8,11 @@ function calculateGratuity() {
   var yearsOfService = endDate.getFullYear() - startDate.getFullYear();
   var monthsOfService = endDate.getMonth() - startDate.getMonth();
   var daysOfService = endDate.getDate() - startDate.getDate();
-  
+
+  if (daysOfService < 0) {
+    monthsOfService--;
+    daysOfService += new Date(endDate.getFullYear(), endDate.getMonth(), 0).getDate();
+  }
   if (monthsOfService < 0) {
     yearsOfService--;
     monthsOfService += 12;
@@ -26,6 +30,6 @@ function calculateGratuity() {
   }
 
   // Display result
-  document.getElementById("result").innerHTML = "The end of service gratuity is: " + gratuityAmount.toFixed(2) + " OMR";
+  var duration = yearsOfService + " years, " + monthsOfService + " months, " + daysOfService + " days";
+  document.getElementById("result").innerHTML = "The end of service gratuity is: " + gratuityAmount.toFixed(2) + " OMR. Duration of service: " + duration;
 }
- 
