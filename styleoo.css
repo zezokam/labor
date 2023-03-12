@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", serif;
     background-color: #f1f1f1;
 }
 
@@ -58,6 +58,9 @@ button[type=button]:hover {
     margin-top: 20px;
     display: none;
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 #result p {
@@ -65,35 +68,27 @@ button[type=button]:hover {
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-top: 30px; /* Add margin to create distance from page content */
+    position: fixed;
+    bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
 footer p {
     margin-bottom: 5px;
 }
 
-footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-top: 1px solid #ddd;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 40px);
-  max-height: 50px; /* add this line to limit the height of the footer container */
+#lastBasicWage {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
-
 
 @media only screen and (max-width: 600px) {
     form {
@@ -105,4 +100,3 @@ footer .container {
         width: 100%;
     }
 }
-
