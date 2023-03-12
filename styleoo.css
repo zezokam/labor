@@ -10,14 +10,17 @@ body {
   font-size: 16px;
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  text-align: center;
+  background-color: transparent;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Center the title */
 h1 {
   text-align: center;
+  margin-top: 30px;
 }
 
 /* Center the form and result container */
@@ -35,6 +38,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 label {
@@ -49,6 +53,7 @@ input {
   border: none;
   background-color: #e8e8e8;
   font-size: 16px;
+  width: 100%;
 }
 
 button {
@@ -86,42 +91,52 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 10px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  margin-top: 30px;
 }
 
 footer p {
-  font-size: 14px;
   margin: 0;
 }
 
 /* Adjust styles for smaller screens */
 @media (max-width: 600px) {
+  /* Adjust container styles */
   .container {
     max-width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
+  
+  /* Adjust form styles */
+  form {
+    width: 100%;
+  }
+  
+  /* Adjust input styles */
   input {
-    font-size: 14px;
+    width: 100%;
   }
-
-  button {
-    font-size: 14px;
+  
+  /* Adjust result styles */
+  #result {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-
-  #gratuityAmount {
-    font-size: 18px;
-  }
-
-  #gratuityDescription {
-    font-size: 14px;
-  }
-
+  
+  /* Adjust footer styles */
   footer {
     font-size: 12px;
+    position: static;
+    margin-top: 20px;
+    padding: 10px 0;
   }
 }
