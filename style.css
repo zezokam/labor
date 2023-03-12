@@ -42,12 +42,12 @@ form {
 }
 
 label {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 input[type="date"], input[type="number"] {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -57,6 +57,7 @@ input[type="date"], input[type="number"] {
 
 button[type="button"] {
   font-size: 18px;
+  font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
   padding: 10px;
   background-color: #4CAF50;
   color: #FFFFFF;
