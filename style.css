@@ -1,13 +1,8 @@
 /* Reset default styles */
 * {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
   padding: 0;
-}
-
-/* Set the viewport to the device width and height */
-meta {
-  viewport: width=device-width, height=device-height, initial-scale=1;
 }
 
 /* Set the font family and size for the entire page */
@@ -19,17 +14,15 @@ body {
 
 /* Add a top-level container to center the page content */
 .container {
-  max-width: none;
-  padding: 0;
-  width: 100%;
-  margin: 20px auto 0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Style the page title */
 h1 {
   font-size: 32px;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Style the input form */
@@ -44,8 +37,7 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="date"],
-input[type="number"] {
+input[type="date"], input[type="number"] {
   font-size: 20px;
   padding: 10px;
   margin-bottom: 20px;
@@ -67,30 +59,24 @@ button[type="button"]:hover {
   background-color: #3E8E41;
 }
 
-/* Style the result container */
+/* Style the result section */
 #result {
-  margin-top: 80px;
-  font-size: 28px;
+  margin-top: 20px;
 }
 
-#error-message {
+#result p {
   font-size: 20px;
-  color: #FF0000;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-/* Set the height of the footer and add margin-top to the result container */
+#gratuityAmount {
+  font-weight: bold;
+}
+
+/* Style the footer */
 footer {
-  background-color: #f2f2f2;
-  padding: 20px;
+  font-size: 10px;
+  color: #666666;
   text-align: center;
-  font-size: 14px;
-  color: #666;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  align-items: center;
+  margin-top: 40px;
 }
