@@ -8,7 +8,7 @@
 /* Set the font family and size for the entire page */
 body {
   font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@ body {
 
 /* Style the page title */
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
@@ -33,12 +33,12 @@ form {
 }
 
 label {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
 input[type="date"], input[type="number"] {
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -46,7 +46,7 @@ input[type="date"], input[type="number"] {
 }
 
 button[type="button"] {
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
   background-color: #4CAF50;
   color: #FFFFFF;
@@ -65,7 +65,7 @@ button[type="button"]:hover {
 }
 
 #result p {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -75,7 +75,7 @@ button[type="button"]:hover {
 
 /* Style the footer */
 footer {
-  font-size: 10px;
+  font-size: 14px;
   color: #666666;
   text-align: center;
   margin-top: 40px;
