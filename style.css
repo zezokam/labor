@@ -36,6 +36,8 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -50,6 +52,7 @@ input[type="date"], input[type="number"] {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center;
 }
 
 button[type="button"] {
