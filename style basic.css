@@ -1,98 +1,38 @@
-/* Center the page contents */
+/* Center all elements and contents */
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 50px;
-  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+#result {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Keep footer at the bottom of the page */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ddd;
+}
+
+footer .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-/* Adjust the styles for the title */
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-/* Adjust the styles for input fields */
-input[type="date"],
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0 0 5px #ccc;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-input[type="number"] {
-  max-width: 150px;
-  border: 1px solid #ccc;
-}
-
-button[type="button"] {
-  font-size: 18px;
-  padding: 12px 30px;
-  background-color: green;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-/* Adjust the styles for input field labels */
-label {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-/* Adjust the styles for input fields on mobile */
-@media only screen and (max-width: 600px) {
-  input[type="date"],
-  input[type="number"] {
-    width: 100%;
-    max-width: none;
-  }
-
-  /* Adjust the styles for input field labels on mobile */
-  label {
-    font-size: 18px;
-  }
-
-  /* Adjust the styles for the result on mobile */
-  .result {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-}
-
-/* Adjust the styles for the result */
-.result {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-/* Adjust the styles for the footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-  font-size: 16px;
-  color: #666;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding: 1rem;
 }
