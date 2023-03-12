@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 /* Set the font family and size for the entire page */
 body {
   font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
@@ -13,7 +12,6 @@ body {
   min-height: 100vh;
   position: relative;
 }
-
 /* Add a top-level container to center the page content */
 .container {
   max-width: 100%;
@@ -25,14 +23,11 @@ body {
   align-items: center;
   min-height: calc(100vh - 100px);
 }
-
 /* Style the page title */
 h1 {
   font-size: 34px;
   margin-bottom: 20px;
-  text-align: center; /* center the text */
 }
-
 /* Style the input form */
 form {
   display: flex;
@@ -41,12 +36,10 @@ form {
   align-items: center;
   margin-bottom: 20px;
 }
-
 label {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
 input[type="date"], input[type="number"] {
   font-size: 16px;
   padding: 10px;
@@ -55,9 +48,9 @@ input[type="date"], input[type="number"] {
   border-radius: 5px;
   text-align: center;
 }
-
 button[type="button"] {
   font-size: 18px;
+  font-family: "Bodoni", "Times New Roman", Arial, sans-serif;
   padding: 10px;
   background-color: #4CAF50;
   color: #FFFFFF;
@@ -65,26 +58,21 @@ button[type="button"] {
   border-radius: 5px;
   cursor: pointer;
 }
-
 button[type="button"]:hover {
   background-color: #3E8E41;
 }
-
 /* Style the result section */
 #result {
   margin-top: 20px;
   text-align: center;
 }
-
 #result p {
   font-size: 32px;
   margin-bottom: 10px;
 }
-
 #gratuityAmount {
   font-weight: bold;
 }
-
 /* Style the footer */
 footer {
   font-size: 12px;
@@ -95,22 +83,23 @@ footer {
   height: 50px;
   background-color: #f5f5f5;
   position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
-footer p {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center; /* center the text */
-}
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 600px) {
-  h1 {
+ footer p {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+ /* Media query for smaller screens */
+ @media only screen and (max-width: 600px) {
+   h1 {
     font-size: 24px;
   }
   label {
