@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Post Service Gratuity Calculator</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="qratuity.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Service Gratuity Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="qratuity.js"></script>
 </head>
 <body>
-	<h1>Post Service Gratuity Calculator</h1>
-	<form>
-		<label for="startDate">Start Date:</label>
-		<input type="date" id="startDate" name="startDate"><br><br>
+    <div class="container">
+        <h1>Post Service Gratuity Calculator</h1>
+        <form>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate"><br><br>
 
-		<label for="endDate">End Date:</label>
-		<input type="date" id="endDate" name="endDate"><br><br>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate"><br><br>
 
-		<label for="lastBasicWage">Last Basic Monthly Salary (OMR):</label>
-		<input type="number" id="lastBasicWage" name="lastBasicWage"><br><br>
+            <label for="lastBasicWage">Last Basic Monthly Salary (OMR):</label>
+            <input type="number" id="lastBasicWage" name="lastBasicWage"><br><br>
 
-		<button type="button" onclick="calculateGratuity()">Calculate</button>
+            <button type="button" onclick="calculateGratuity()">Calculate</button>
+        </form>
 
-		<div id="result">
-			<p id=The post service gratuity is:></p>
-			<p id="gratuityAmount"></p>
-			<p id="gratuityDescription"></p>
-		</div>
-	</form>
-	
-<footer>
-    <p>According to the article 39 of Omani labor law 35/2003</p>
-    <p>Copyright Azzan Alkamali 2023</p>
-</footer>
+        <div id="result">
+            <p>The post service gratuity is:</p>
+            <p id="gratuityAmount"></p>
+            <p id="gratuityDescription"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>According to the article 39 of Omani labor law 35/2003</p>
+            <p>© Azzan Alkamali 2023</p>
+        </div>
+    </footer>
 
 </body>
 </html>
