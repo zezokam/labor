@@ -95,7 +95,10 @@ footer {
   background-color: #f5f5f5;
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: center;
 }
+
 
 footer p {
   display: flex;
