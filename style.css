@@ -98,15 +98,15 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
 
 footer p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
