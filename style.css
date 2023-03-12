@@ -101,19 +101,27 @@ footer {
  @media only screen and (max-width: 600px) {
    h1 {
     font-size: 24px;
-  }
-  label {
-    font-size: 20px;
-  }
-  input[type="date"], input[type="number"] {
-    font-size: 20px;
+   }
+   form {
+    margin-bottom: 10px;
+   }
+   label {
+    font-size: 14px;
+   }
+   input[type="date"], input[type="number"] {
+    font-size: 14px;
     padding: 8px;
-  }
-  button[type="button"] {
+    margin-bottom: 10px;
+   }
+   button[type="button"] {
+    font-size: 16px;
+    padding: 8px;
+   }
+   #result p {
     font-size: 24px;
-    padding: 8px;
-  }
-  #result p {
-    font-size: 28px;
-  }
-}
+   }
+   footer {
+    font-size: 10px;
+    height: 40px;
+   }
+ }
