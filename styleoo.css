@@ -66,6 +66,7 @@ button[type=button]:hover {
 
 #result {
   margin-top: 20px;
+  display: 0;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 4px;
