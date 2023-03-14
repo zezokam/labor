@@ -31,38 +31,49 @@ function calculateGratuity() {
     gratuityAmount = (dailyWage * 15 * 3) + (dailyWage * 30 * (yearsOfService - 3)) + (dailyWage * monthsOfService * 30 / 12) + (dailyWage * daysOfService / 12);
   }
 
-  // Format duration of service
-var yearsText, monthsText, daysText;
+// Format duration of service
+var duration = "";
 if (yearsOfService == 1) {
-  yearsText = "سنة";
+  duration += "سنة";
 } else if (yearsOfService == 2) {
-  yearsText = "سنتين";
+  duration += "سنتين";
 } else if (yearsOfService >= 3 && yearsOfService <= 10) {
-  yearsText = "سنوات";
+  duration += yearsOfService + " سنوات";
 } else {
-  yearsText = "سنة";
+  duration += yearsOfService + " سنة";
 }
 
-if (monthsOfService == 1) {
-  monthsText = "شهر";
-} else if (monthsOfService == 2) {
-  monthsText = "سنتين"; // Change this line to display "سنتين" instead of "2 سنتين"
-} else if (monthsOfService >= 3 && monthsOfService <= 10) {
-  monthsText = "أشهر";
-} else {
-  monthsText = "شهر";
+if (monthsOfService > 0) {
+  if (duration != "") {
+    duration += " و ";
+  }
+  if (monthsOfService == 1) {
+    duration += "شهر";
+  } else if (monthsOfService == 2) {
+    duration += "شهرين";
+  } else if (monthsOfService >= 3 && monthsOfService <= 10) {
+    duration += monthsOfService + " أشهر";
+  } else if (monthsOfService == 12) {
+    duration += "سنة";
+  } else {
+    duration += "أشهر";
+  }
 }
 
-if (daysOfService == 1) {
-  daysText = "يوم";
-} else if (daysOfService == 2) {
-  daysText = "يومين";
-} else if (daysOfService >= 3 && daysOfService <= 10) {
-  daysText = "أيام";
-} else {
-  daysText = "يوم";
+if (daysOfService > 0) {
+  if (duration != "") {
+    duration += " و ";
+  }
+  if (daysOfService == 1) {
+    duration += "يوم";
+  } else if (daysOfService == 2) {
+    duration += "يومين";
+  } else if (daysOfService >= 3 && daysOfService <= 10) {
+    duration += daysOfService + " أيام";
+  } else {
+    duration += daysOfService + " يوم";
+  }
 }
-
 
   // Display result
   var duration = yearsOfService + " " + yearsText + " و " + monthsOfService + " " + monthsText + " و " + daysOfService + " " + daysText;
