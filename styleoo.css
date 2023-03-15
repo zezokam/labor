@@ -1,116 +1,141 @@
+/* Reset Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Global Styles */
+:root {
+  --primary-color: #1c1c1c;
+  --secondary-color: #ffffff;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+}
+
 body {
-  font-family: "Khalid", serif;
-  background-color: #f1f1f1;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  margin-top: 40px;
+  font-family: var(--font-primary);
+  background-color: var(--secondary-color);
 }
 
 .container {
-  width: 80%;
-  min-height: calc(100vh - 100px);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-item {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.header__menu-link {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.header__menu-link:hover {
+  color: #666666;
+}
+
+/* Form Styles */
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  margin-top: 40px;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-label {
+.form__label {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-input[type=date],
-input[type=number] {
+.form__input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 10px;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.form__input[type=date] {
   /* make the input date format dd/mm/yyyy */
   text-transform: uppercase;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
+.form__input[type=date]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-button[type=button] {
-  background-color: #4CAF50;
-  color: white;
-  font-family: "Khalid", serif;
+.form__button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-top: 20px;
   transition: background-color 0.2s ease-in-out;
 }
 
-button[type=button]:hover {
-  background-color: #45a049;
+.form__button:hover {
+  background-color: #666666;
 }
 
-#result {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: none;
+/* Result Styles */
+.result {
+  margin-top: 40px;
   text-align: center;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
 }
 
-#result p {
-  color: blue;
-  font-family: "Khalid", serif;
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 10px;
+.result__heading {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
-@font-face {
-  font-family: "Khalid";
-  src: url("https://raw.githubusercontent.com/zezokam/Arabic-labor/main/Fonts/Khalid.ttf") format("truetype");
-}
-
-@media only screen and (max-width: 600px) {
-  form {
-    flex-direction: column;
-  }
-  input[type=date],
-  input[type=number],
-  button[type=button] {
-    width: 100%;
-  }
-  
-  .button-container {
-    flex-direction: column;
-  }
+.result__message {
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
