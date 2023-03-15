@@ -76,6 +76,6 @@ function calculateGratuity() {
   }
 
   // Display result
-  var resultString = "Gratuity Amount: " + gratuityAmount.toFixed(3) + " SAR" + "<br>" + "Duration of Service: " + duration;
+  var resultString = "Gratuity Amount: " + gratuityAmount.toFixed(3) + " O.R" + "<br>" + "Duration of Service: " + duration;
   document.getElementById("result").innerHTML = resultString;
 }
