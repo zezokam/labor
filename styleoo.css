@@ -14,10 +14,8 @@ body {
 }
 
 .container {
-  width: 80%;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  min-height: calc(100vh - 100px);
+  width: min(100% - 30px, 840px);
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,3 +103,4 @@ footer p {
     width: 100%;
   }
 }
+ 
