@@ -8,10 +8,8 @@ body {
   font-family: "Khalid", serif;
   background-color: #f1f1f1;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   margin-top: 40px;
 }
 
@@ -72,6 +70,7 @@ button[type=button] {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 button[type=button]:hover {
@@ -81,7 +80,7 @@ button[type=button]:hover {
 #result {
   margin-top: 20px;
   margin-bottom: 20px;
-  display: 0;
+  display: none;
   text-align: center;
   border: none;
   border-radius: 4px;
@@ -100,7 +99,6 @@ button[type=button]:hover {
   font-family: "Khalid";
   src: url("https://raw.githubusercontent.com/zezokam/Arabic-labor/main/Fonts/Khalid.ttf") format("truetype");
 }
-
 
 @media only screen and (max-width: 600px) {
   form {
