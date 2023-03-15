@@ -135,3 +135,35 @@ body {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+  
+  .header__menu-mobile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__menu-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .header__menu-mobile-link {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .header__menu-mobile-link:hover {
+    color: #666666;
+  }
+}
+
