@@ -56,3 +56,16 @@ function calculateGratuity() {
   var resultString = "gratuity: " + gratuityAmount.toFixed(3) + " O.R" + "<br>" + "service duration: " + duration;
   document.getElementById("result").innerHTML = resultString;
 }
+
+function changeLanguage() {
+  // Toggle language
+  var languageButton = document.getElementById("languageButton");
+  if (languageButton.innerHTML == "English") {
+    languageButton.innerHTML = "Español";
+  } else {
+    languageButton.innerHTML = "English";
+  }
+  
+  // Redirect to GitHub repository
+  window.location.href = "https://c.alkamali.uk";
+}
