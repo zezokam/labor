@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 form {
@@ -66,9 +66,8 @@ button[type=button] {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 10px;
-  font-size: 18px !important; /* Add this line to set the font size */
+  font-size: 14px !important;
 }
-
 
 button[type=button]:hover {
   background-color: #45a049;
