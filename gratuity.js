@@ -60,11 +60,6 @@ function calculateGratuity() {
 function changeLanguage() {
   // Toggle language
   var languageButton = document.getElementById("languageButton");
-  if (languageButton.innerHTML == "English") {
-    languageButton.innerHTML = "عربي";
-  } else {
-    languageButton.innerHTML = "English";
-  }
   
   // Redirect to GitHub repository
   window.location.href = "https://c.alkamali.uk";
