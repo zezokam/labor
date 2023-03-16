@@ -87,7 +87,7 @@ button[type=button]:hover {
   color: blue;
   font-family: "Khalid", serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
@@ -104,7 +104,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 10px;
+  font-size: 13px;
   color: white;
 }
 
