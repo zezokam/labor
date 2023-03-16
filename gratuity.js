@@ -61,7 +61,7 @@ function changeLanguage() {
   // Toggle language
   var languageButton = document.getElementById("languageButton");
   if (languageButton.innerHTML == "English") {
-    languageButton.innerHTML = "Español";
+    languageButton.innerHTML = "عربي";
   } else {
     languageButton.innerHTML = "English";
   }
