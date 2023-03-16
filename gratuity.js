@@ -32,50 +32,27 @@ function calculateGratuity() {
   }
 
   // Format duration of service
-  var duration = "";
+  var yearsText, monthsText, daysText;
   if (yearsOfService == 1) {
-    duration += "1 year";
-  } else if (yearsOfService == 2) {
-    duration += "2 years";
-  } else if (yearsOfService >= 3 && yearsOfService <= 10) {
-    duration += yearsOfService + " years";
+    yearsText = "year";
   } else {
-    duration += yearsOfService + " year";
+    yearsText = "years";
   }
 
-  if (monthsOfService > 0) {
-    if (duration != "") {
-      duration += " and ";
-    }
-    if (monthsOfService == 1) {
-      duration += "1 month";
-    } else if (monthsOfService == 2) {
-      duration += "2 months";
-    } else if (monthsOfService >= 3 && monthsOfService <= 10) {
-      duration += monthsOfService + " months";
-    } else if (monthsOfService == 12) {
-      duration += "1 year";
-    } else {
-      duration += "months";
-    }
+  if (monthsOfService == 1) {
+    monthsText = "month";
+  } else {
+    monthsText = "months";
   }
 
-  if (daysOfService > 0) {
-    if (duration != "") {
-      duration += " and ";
-    }
-    if (daysOfService == 1) {
-      duration += "1 day";
-    } else if (daysOfService == 2) {
-      duration += "2 days";
-    } else if (daysOfService >= 3 && daysOfService <= 10) {
-      duration += daysOfService + " days";
-    } else {
-      duration += daysOfService + " day";
-    }
+  if (daysOfService == 1) {
+    daysText = "day";
+  } else {
+    daysText = "days";
   }
 
   // Display result
-  var resultString = "Gratuity Amount: " + gratuityAmount.toFixed(3) + " O.R" + "<br>" + "Duration of Service: " + duration;
+  var duration = yearsOfService + " " + yearsText + " , " + monthsOfService + " " + monthsText + " , " + daysOfService + " " + daysText;
+  var resultString = "gratuity: " + gratuityAmount.toFixed(3) + " O.R" + "<br>" + "service duration: " + duration;
   document.getElementById("result").innerHTML = resultString;
 }
